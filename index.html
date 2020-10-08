@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="header">
+            <h1>To DO Task</h1>
+            <input id="todoText" placeholder="Enter Text" type="text" class="for">
+            <button id="addTaskBtn" onclick="addTodo()" class="btn btn-outline-primary">Add Task</button>
+            <button id="deleteAllBtn" class="btn btn-outline-danger">Delete All Task</button>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <ul id="todoList" class="ul"></ul>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

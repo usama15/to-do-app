@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box  ;
+}
+.workList
+{
+    height: 285px;
+    overflow-y: visible;
+    padding-left: 0;
+    list-style: none;
+    width: 500px;
+}
+
+.header{
+    background-color: #e2dfd3;
+    padding: 30px 40px;
+    color: rgb(10, 7, 7);
+    text-align: center;
+}
+
+.for{
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+}
+
+.ul{
+    margin: 0;
+    padding: 0;
+}
+
+.ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+.ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    list-style-type: none;
+    transition: 0.2s;
+      -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
